@@ -9,7 +9,7 @@ export const useHttp = (url) => {
         console.log('Sending Http request to URL: ' + url);
         Axios.get(url)
             .then(res => setData(res.data))
-    }, []);
+    }, [url]);
 
     return [fetchedData];
 };

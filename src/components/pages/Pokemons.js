@@ -4,7 +4,7 @@ import { useHttp } from '../hooks/http';
 
 export const Pokemons = () => {
 
-  const [pokemons] = useHttp('https://pokeapi.co/api/v2/pokemon', []);
+  const [pokemons] = useHttp('https://pokeapi.co/api/v2/pokemon');
 
   let content = `<p>Loading Pokemons</p>`;
 
